@@ -4,32 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ai.aprivate.playmicstereo.MainActivity"
-    android:orientation="vertical">
-        <Button
-            android:layout_width="240dp"
+    android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Loading.."
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/recordButton"
-            android:onClick="recordClick"/>
-        <Button
-            android:id="@+id/playLeftButton"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Play Left"
-            android:layout_alignBaseline="@+id/playRightButton"
-            android:layout_alignBottom="@+id/playRightButton"
-            android:layout_toStartOf="@+id/playRightButton"
-            android:onClick="playLeftClick"/>
-        <Button
-            android:id="@+id/playRightButton"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Play Right"
-            android:layout_below="@+id/recordButton"
-            android:layout_alignEnd="@+id/recordButton"
-            android:onClick="playRightClick"/>
+            android:layout_centerHorizontal="true">
+                <Button
+                    android:id="@+id/playLeftButton"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:onClick="playLeftClick"/>
+                <Button
+                    android:id="@+id/playRightButton"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:onClick="playRightClick"/>
+        </LinearLayout>
+
 </RelativeLayout>
