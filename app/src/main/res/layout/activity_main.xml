@@ -13,15 +13,13 @@
                 <Button
                     android:id="@+id/playLeftButton"
                     android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:onClick="playLeftClick"/>
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"/>
                 <Button
                     android:id="@+id/playRightButton"
                     android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:onClick="playRightClick"/>
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp" />
         </LinearLayout>
 
 </RelativeLayout>
